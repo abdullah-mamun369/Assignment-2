@@ -104,17 +104,18 @@ aside div {
 aside div a {
     font-weight: 600;
     font-size: 20px;
+    letter-spacing: 1px;
     margin: auto;
     line-height: 64px;
     text-decoration: none;
     color: black;
 }
 
-.up-match {
+.blog {
     background-color: #DD0000;
 }
 
-.up-match a {
+.blog a {
     color: white;
 }
 
@@ -390,6 +391,7 @@ ul li a:hover {
         width: 734px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
         row-gap: 28px;
         column-gap: 10px;
     }
