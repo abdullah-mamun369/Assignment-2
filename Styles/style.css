@@ -187,6 +187,7 @@ hr {
     text-decoration: none;
     color: white;
     padding: 0 20px;
+    transition: 0.8s;
 }
 
 .social-icon {
@@ -197,6 +198,7 @@ hr {
     color: white;
     font-size: 25px;
     padding: 0 20px;
+    transition: 0.7s;
 }
 
 /* <!------------ 
@@ -205,6 +207,14 @@ hr {
 .watch-live:hover {
     color: white;
     background-position: 100%;
+}
+
+ul li a:hover {
+    color: #DD0000;
+}
+
+.social-icon a:hover {
+    color: #DD0000;
 }
 
 /* <!------------ 
@@ -233,6 +243,10 @@ hr {
         font-size: 1.5em;
         color: white;
         line-height: 1.2em;
+    }
+
+    .hero-info p span {
+        display: none;
     }
 
     .hero-image {
@@ -299,6 +313,108 @@ hr {
         margin: 20px;
     }
 
-    /* Footer */
+}
+
+/* Tablet */
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+
+    /* hero-start */
+
+    .hero {
+        width: 734px;
+        margin-bottom: 10px;
+    }
+
+    .hero-info {
+        padding: 10% 0 12% 10%;
+        width: 80%;
+    }
+
+    .hero-info h1 {
+        font-weight: 700;
+        font-size: 1.5em;
+        color: white;
+        line-height: 1.2em;
+    }
+
+    .hero-info p span {
+        display: none;
+    }
+
+    .hero-image {
+        display: grid;
+        width: 100%;
+    }
+
+    .hero-image img {
+        margin: auto;
+        width: 80%;
+        margin-bottom: inherit;
+    }
+
+    /* Informations-Start */
+    .informations {
+        flex-direction: column;
+        width: 734px;
+    }
+
+    aside {
+        width: 734px;
+        background: none;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-right: 0;
+        padding: 0;
+        margin: -50px 0 -90px 0;
+
+    }
+
+    aside div {
+        border: 1px solid grey;
+        width: 220px;
+        height: 64px;
+        background-color: white;
+        border-radius: 10px;
+        margin: auto;
+    }
+
+    .container {
+        width: 734px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 28px;
+        column-gap: 10px;
+    }
+
+    .match-details {
+        margin: auto;
+        width: 340px;
+    }
+
+    .view-more {
+        display: inline;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    footer {
+        width: 100%;
+        height: 500px;
+    }
+
+    .footer-info ul li a {
+        display: inline-block;
+        line-height: 50px;
+    }
+
+    .footer-info {
+        margin: auto;
+        width: 734px;
+        text-align: center;
+    }
+
+    hr {
+        margin: 20px;
+    }
 
 }
